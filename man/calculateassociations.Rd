@@ -25,14 +25,15 @@ calculated as: ((1-(d/R_{i})^{2}))^{2} if d>0 and d<=R_{i},
 and 0 otherwise. This function has been described as a
 smooth interaction function because the value of the
 association calculated decreases smoothly as a function of
-distance (See Figure (b)).  This is in contrast to
+distance.  This is in contrast to
 associations calcuated using a binary function where the
 association =1 if d<=R and 0 otherwise.  Such a function is
 based on the assumption that the association is constant
 (1) at all distances less than R_{i}, and 0 for distances
-greater than R_{i} (See Figure (a)).
+greater than R_{i}.
+The figure below shows a plot of both functions (the binary interaction function is represented by the dotted line) for an example where R=1.
 
-\figure{step.jpeg} \figure{smooth.jpeg}
+\figure{smooth.jpeg}
 }
 \references{
 Illian, Moller, Waagepetersen, 2009. Hierarchical spatial

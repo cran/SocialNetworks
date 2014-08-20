@@ -11,8 +11,8 @@ Generates a social network based on user inputted spatial xy coordinates.
 \tabular{ll}{
 Package: \tab SocialNetworks\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-03-18\cr
+Version: \tab 1.1\cr
+Date: \tab 2014-08-20\cr
 License: \tab GPL\cr
 }
 

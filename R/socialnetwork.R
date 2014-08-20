@@ -23,11 +23,12 @@
 #' @export
 calculateassociations = function(x,y,ir){
   n = length(x)
-  spnet = matrix(0,nrow=n,ncol=n)
+  spnet = matrix(1,nrow=n,ncol=n)
   for(i in 1:n){
     for(j in 1:n){
       d = sqrt( ((x[i] - x[j])^2)  +  ((y[i]-y[j])^2) )
-      spnet[i,j] =  ifelse( (d>0)&&(d<=ir[i]), (1-(d/ir[i])^2)^2,0)
+      #spnet[i,j] =  ifelse( d>0&&d<ir[i], (1-(d/ir[i])^2)^2,0)
+      spnet[i,j] =  ifelse( ((d>0)&&(d<=ir[i])), (1-(d/ir[i])^2)^2,0)
     }
   }
   
